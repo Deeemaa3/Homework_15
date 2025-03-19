@@ -23,18 +23,26 @@
 
 */
 
-// var arr = [1, 2, 3, 4, 5];
+// Сделал 2 варианта решения, вроде оба работают
 
-// var reversedArr = [];
+// let arr = [1, 2, 3, 4, 5];
 
-// var i = arr.length-1;
+// for (i = 1; i <= 5; i++) {
+//     arr.unshift(i);
+//     arr.pop();
+    
+// }
+// console.log(arr)
 
-// while (i >= 0) {
-//     reversedArr.push(arr[i]);
+
+// let arr = [1, 2, 3, 4, 5];
+
+// for (let i = 1; i <= arr.length; i++) {
+//     arr.unshift(i);
+//     arr.pop();
 // }
 
-// console.log(reversedArr);
-
+// console.log(arr);
 
 /* 
     TASK 3
@@ -85,7 +93,7 @@
 
 */
 
-// var inputNumber= prompt('введите число');
+// var inputNumber= prompt('Введите число');
 
 // function insertNumber(number) {
 //     let numStr = number.toString();
@@ -95,7 +103,7 @@
 //         result += numStr[i];
 
         
-//         if (i < numStr.length - 1 && numStr[i] % 2 !== 0 && numStr[i + 1] % 2 !== 0) {
+//         if (i < numStr.length-1 && parseInt(numStr[i]) % 2 !== 0 && parseInt(numStr[i + 1]) % 2 !== 0)  {
 //             result += ':';
 //         }
 //     }
